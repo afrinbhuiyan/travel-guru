@@ -1,0 +1,87 @@
+[
+  {
+    "id": "cbz-001",
+    "title": "COX’S BAZAR",
+    "image": "https://i.ibb.co.com/pBr2ZFc9/Rectangle-1.png",
+    "description": "Cox’s Bazar is home to the world’s longest natural sandy beach, stretching over 120 km along the Bay of Bengal. It is a prime tourist destination in Bangladesh, known for its stunning sunsets, vibrant seafood markets, and nearby attractions like Himchari National Park and Inani Beach.",
+    "location": "Chittagong Division, Bangladesh",
+    "attractions": [
+      "Cox’s Bazar Beach",
+      "Himchari National Park",
+      "Inani Beach",
+      "Marine Drive",
+      "Ramu Buddhist Village"
+    ],
+    "best_time_to_visit": "November to March",
+    "activity_level": "Moderate",
+    "active": true
+  },
+  {
+    "id": "sml-002",
+    "title": "SREEMANGAL",
+    "image": "https://i.ibb.co.com/0RB83CLK/9782559-best-tea-gardens-Bangladesh.jpg",
+    "description": "Sreemangal, known as the 'Tea Capital of Bangladesh,' is famous for its lush tea gardens, rolling hills, and vibrant wildlife. It is also home to the Lawachara National Park, which hosts rare species like the Hoolock Gibbon and various exotic birds.",
+    "location": "Moulvibazar District, Sylhet Division",
+    "attractions": [
+      "Lawachara National Park",
+      "Seven Layers Tea",
+      "Madhabpur Lake",
+      "Baikka Beel Wetland",
+      "Nilkantha Tea Cabin"
+    ],
+    "best_time_to_visit": "October to April",
+    "activity_level": "Moderate",
+    "active": false
+  },
+  {
+    "id": "sdb-003",
+    "title": "SUNDARBANS",
+    "image": "https://i.ibb.co.com/Q7vPNSDc/photo-1549300461-11c5b94e8855.jpg",
+    "description": "The Sundarbans, a UNESCO World Heritage Site, is the largest mangrove forest in the world and home to the Royal Bengal Tiger. This vast delta is a network of rivers, islands, and dense forests, offering thrilling boat safaris and wildlife spotting opportunities.",
+    "location": "Khulna Division, Bangladesh & West Bengal, India",
+    "attractions": [
+      "Wildlife Safari (Royal Bengal Tiger, Saltwater Crocodiles)",
+      "Karamjal Wildlife Center",
+      "Hiron Point",
+      "Kotka Beach",
+      "Dublar Char Island"
+    ],
+    "best_time_to_visit": "November to February",
+    "activity_level": "High (Adventure)",
+    "active": false
+  },
+  {
+    "id": "rng-004",
+    "title": "SYLHET",
+    "image": "https://i.ibb.co.com/fG95shy1/Jaflong-Sylhet.jpg",
+    "description": "Sylhet is a picturesque city surrounded by tea gardens, waterfalls, and wetlands. Known for its spiritual significance (home to the shrines of Hazrat Shah Jalal and Shah Paran), it also offers stunning natural beauty with places like Ratargul Swamp Forest and Jaflong.",
+    "location": "Sylhet Division, Bangladesh",
+    "attractions": [
+      "Ratargul Swamp Forest",
+      "Jaflong (Dawki River)",
+      "Lalakhal",
+      "Shah Jalal Dargah",
+      "Bisnakhandi"
+    ],
+    "best_time_to_visit": "October to March",
+    "activity_level": "Moderate",
+    "active": false
+  },
+  {
+    "id": "ctg-005",
+    "title": "BANDARBAN",
+    "image": "https://i.ibb.co.com/wZVqkM3x/204-36376273530-3c9a0335f5-b-copyjpg.jpg",
+    "description": "Bandarban, part of the Chittagong Hill Tracts, is known for its stunning landscapes, indigenous cultures, and trekking trails. Key attractions include Nilgiri Hills, Chimbuk Hill, and the golden temple of Buddha Dhatu Jadi.",
+    "location": "Chittagong Hill Tracts, Bangladesh",
+    "attractions": [
+      "Nilgiri Hills",
+      "Boga Lake",
+      "Chimbuk Hill",
+      "Buddha Dhatu Jadi (Golden Temple)",
+      "Sangu River"
+    ],
+    "best_time_to_visit": "November to March",
+    "activity_level": "High (Trekking)",
+    "active": false
+  }
+]
