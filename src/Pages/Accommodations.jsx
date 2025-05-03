@@ -13,6 +13,8 @@ const Accommodations = () => {
   const [destination, setDestination] = useState(null);
   const [accommodations, setAccommodations] = useState(null);
 
+  console.log(motion)
+
   useEffect(() => {
     const foundDestination = initialDestinations.find((des) => des.id === id);
     setAccommodations(foundDestination?.accommodations);

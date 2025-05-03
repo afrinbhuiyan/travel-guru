@@ -5,7 +5,7 @@ import { NavLink } from "react-router";
 const Navbar = () => {
 
   const linkStyle = "flex items-center px-3 py-2 text-gray-700 hover:text-[#F9A51A] transition-colors duration-200";
-  const activeLinkStyle = "text-blue-600 font-medium border-b-2 border-blue-600";
+  const activeLinkStyle = "text-[#F9A51A] font-medium border-b-2 border-[#F9A51A]";
 
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">

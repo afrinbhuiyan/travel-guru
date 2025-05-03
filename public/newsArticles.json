@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "New Tourist Attractions Opening in Cox's Bazar",
+    "excerpt": "The government has announced three new beachfront developments to enhance visitor experience. These attractions include eco-friendly resorts, a cultural museum, and a family amusement park. Officials hope the new additions will boost tourism and support the local economy by creating jobs and attracting international visitors.",
+    "date": "2023-06-15",
+    "readTime": "4 min",
+    "category": "tourism",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 2,
+    "title": "Sustainable Tourism Initiatives in Bangladesh",
+    "excerpt": "Eco-friendly resorts and community-based tourism projects are gaining popularity across the country. These initiatives aim to reduce environmental impact while empowering local communities through training, employment, and cultural preservation. Travelers are increasingly seeking experiences that contribute positively to the places they visit.",
+    "date": "2023-06-10",
+    "readTime": "6 min",
+    "category": "eco",
+    "image": "https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 3,
+    "title": "Cultural Heritage Festival Returns After 3 Years",
+    "excerpt": "The annual festival showcasing traditional Bangladeshi arts will feature over 100 performers from across the country. After a three-year hiatus due to the pandemic, the event returns with folk music, dance, craft exhibitions, and regional food stalls. It promises to be a celebration of Bangladesh’s rich cultural identity.",
+    "date": "2023-06-05",
+    "readTime": "3 min",
+    "category": "culture",
+    "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 4,
+    "title": "Travel Advisory Updates for International Visitors",
+    "excerpt": "New visa policies and health requirements have been implemented starting this month. Visitors must now submit proof of vaccination and complete an online health declaration before arrival. The Ministry of Tourism urges travelers to review these updates to ensure smooth entry and compliance with local laws.",
+    "date": "2023-05-28",
+    "readTime": "5 min",
+    "category": "travel",
+    "image": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 5,
+    "title": "Best Seasonal Foods to Try While Traveling",
+    "excerpt": "Local chefs recommend these authentic dishes during the monsoon season. From freshly fried hilsa fish to warm pithas served with jaggery syrup, the monsoon offers a flavorful journey through Bangladesh's culinary traditions. Travelers are encouraged to explore local markets and street vendors for the full experience.",
+    "date": "2023-05-20",
+    "readTime": "4 min",
+    "category": "food",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 6,
+    "title": "New Direct Flight Routes Announced",
+    "excerpt": "Three international airlines will begin direct flights to Dhaka starting next quarter. The new routes aim to reduce travel time and improve access for tourists and business travelers alike. Officials say this move will strengthen international ties and encourage more foreign investment and tourism.",
+    "date": "2023-05-15",
+    "readTime": "3 min",
+    "category": "transport",
+    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+  }
+]
