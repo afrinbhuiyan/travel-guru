@@ -14,7 +14,60 @@
     ],
     "best_time_to_visit": "November to March",
     "activity_level": "Moderate",
-    "active": true
+    "active": true,
+    "accommodations": [
+      {
+        "id": "cbz-room1",
+        "title": "Light bright airy stylish apt & safe peaceful stay",
+        "type": "Beachfront Apartment",
+        "guests": 4,
+        "bedrooms": 2,
+        "beds": 2,
+        "baths": 2,
+        "amenities": ["WiFi", "Air conditioning", "Kitchen", "Balcony with sea view", "Washing machine"],
+        "cancellation": "Free cancellation up to 7 days before stay",
+        "rating": 4.9,
+        "reviews": 20,
+        "price_per_night": 34,
+        "total_price": 167,
+        "image": "https://baywatch.com.bd/public/assets/uploads/room/1725947719.DSCF5945.JPG",
+        "highlights": ["5-minute walk to the beach", "24/7 security", "Private parking"]
+      },
+      {
+        "id": "cbz-room2",
+        "title": "Apartment in Lost Panorama",
+        "type": "Luxury Apartment",
+        "guests": 4,
+        "bedrooms": 2,
+        "beds": 2,
+        "baths": 2,
+        "amenities": ["WiFi", "Air conditioning", "Kitchen", "Infinity pool", "Smart TV"],
+        "cancellation": "Flexible cancellation (48-hour notice)",
+        "rating": 4.8,
+        "reviews": 10,
+        "price_per_night": 52,
+        "total_price": 167,
+        "image": "https://seagullhotelbd.com/wp-content/uploads/2023/07/seagull_president-room.jpg",
+        "highlights": ["Panoramic hill views", "Rooftop terrace", "Daily housekeeping"]
+      },
+      {
+        "id": "cbz-room3",
+        "title": "AR Lounge & Pool (r&r + b&b)",
+        "type": "Boutique Stay",
+        "guests": 4,
+        "bedrooms": 2,
+        "beds": 2,
+        "baths": 2,
+        "amenities": ["WiFi", "Air conditioning", "Kitchen", "Shared pool", "Breakfast included"],
+        "cancellation": "Strict (no refund within 24 hours)",
+        "rating": 4.9,
+        "reviews": 25,
+        "price_per_night": 44,
+        "total_price": 167,
+        "image": "https://seagullhotelbd.com/wp-content/uploads/2023/10/New-web-pic-for-seagull-7-min.png",
+        "highlights": ["Art-themed decor", "Evening bonfires", "Bicycle rentals"]
+      }
+    ]
   },
   {
     "id": "sml-002",
@@ -31,7 +84,26 @@
     ],
     "best_time_to_visit": "October to April",
     "activity_level": "Moderate",
-    "active": false
+    "active": false,
+    "accommodations": [
+      {
+        "id": "sml-room1",
+        "title": "Tea Garden Bungalow",
+        "type": "Heritage Stay",
+        "guests": 3,
+        "bedrooms": 1,
+        "beds": 2,
+        "baths": 1,
+        "amenities": ["WiFi", "Garden view", "Veranda", "Traditional breakfast"],
+        "cancellation": "Free cancellation",
+        "rating": 4.7,
+        "reviews": 15,
+        "price_per_night": 28,
+        "total_price": 112,
+        "image": "https://www.grandsultanresort.com/wp-content/uploads/2023/12/Untitled-design-_2_.webp",
+        "highlights": ["Surrounded by tea fields", "Vintage furniture", "Guided tea-tasting"]
+      }
+    ]
   },
   {
     "id": "sdb-003",
@@ -48,7 +120,26 @@
     ],
     "best_time_to_visit": "November to February",
     "activity_level": "High (Adventure)",
-    "active": false
+    "active": false,
+    "accommodations": [
+      {
+        "id": "sdb-room1",
+        "title": "Eco River Cabin",
+        "type": "Wilderness Lodge",
+        "guests": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "amenities": ["Solar power", "Mosquito nets", "Riverfront deck", "Guided safari tours"],
+        "cancellation": "Non-refundable",
+        "rating": 4.5,
+        "reviews": 8,
+        "price_per_night": 40,
+        "total_price": 200,
+        "image": "https://www.hotelsonarbangla.com/wp-content/uploads/2024/03/deluxe-rooms.webp",
+        "highlights": ["Private boat access", "Birdwatching tower", "Organic meals"]
+      }
+    ]
   },
   {
     "id": "rng-004",
@@ -65,7 +156,26 @@
     ],
     "best_time_to_visit": "October to March",
     "activity_level": "Moderate",
-    "active": false
+    "active": false,
+    "accommodations": [
+      {
+        "id": "rng-room1",
+        "title": "Hillside Rainforest Retreat",
+        "type": "Villa",
+        "guests": 6,
+        "bedrooms": 3,
+        "beds": 4,
+        "baths": 2,
+        "amenities": ["WiFi", "Hot tub", "Fireplace", "Private chef (on request)"],
+        "cancellation": "Moderate (50% refundable)",
+        "rating": 4.9,
+        "reviews": 12,
+        "price_per_night": 75,
+        "total_price": 450,
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/e2/a0/f9/grand-sylhet-hotel-resort.jpg?w=700&h=-1&s=1",
+        "highlights": ["360° rainforest views", "Infinity pool", "Yoga deck"]
+      }
+    ]
   },
   {
     "id": "ctg-005",
@@ -82,6 +192,59 @@
     ],
     "best_time_to_visit": "November to March",
     "activity_level": "High (Trekking)",
-    "active": false
+    "active": false,
+    "accommodations": [
+      {
+        "id": "ctg-room1",
+        "title": "Mountain Cliff Hut",
+        "type": "Eco Hut",
+        "guests": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "amenities": ["Compost toilet", "Solar shower", "Campfire area", "Trekking gear storage"],
+        "cancellation": "Strict (no refunds)",
+        "rating": 4.6,
+        "reviews": 5,
+        "price_per_night": 22,
+        "total_price": 110,
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/48/b4/0f/our-non-smoking-rooms.jpg?w=1200&h=-1&s=1",
+        "highlights": ["Sunrise views", "Tribal cuisine", "Guided hikes"]
+      },
+      {
+        "id": "ctg-room2",
+        "title": "Golden Temple View Resort",
+        "type": "Boutique Resort",
+        "guests": 4,
+        "bedrooms": 2,
+        "beds": 2,
+        "baths": 2,
+        "amenities": ["WiFi", "Hot tub", "Mountain-view balcony", "On-site restaurant"],
+        "cancellation": "Flexible (free cancellation up to 3 days)",
+        "rating": 4.8,
+        "reviews": 18,
+        "price_per_night": 65,
+        "total_price": 325,
+        "image": "https://q-xx.bstatic.com/xdata/images/hotel/840x460/423826564.jpg?k=3ccb66b5101589c86574d8db0ffa01e6d8a1a9b73fdb60431212349db8bcefdb&o=",
+        "highlights": ["5-minute walk to Buddha Dhatu Jadi", "Yoga sessions", "Local craft workshops"]
+      },
+      {
+        "id": "ctg-room3",
+        "title": "Boga Lake Treehouse",
+        "type": "Adventure Stay",
+        "guests": 3,
+        "bedrooms": 1,
+        "beds": 2,
+        "baths": 1,
+        "amenities": ["Solar power", "Hammock nets", "Lake access", "Kayak rentals"],
+        "cancellation": "Moderate (50% refundable)",
+        "rating": 4.9,
+        "reviews": 12,
+        "price_per_night": 45,
+        "total_price": 225,
+        "image": "https://images.trvl-media.com/lodging/92000000/91140000/91133000/91132911/51dd8675.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+        "highlights": ["Overlooking Boga Lake", "Stargazing deck", "Tribal storytelling nights"]
+      }
+    ]
   }
 ]
