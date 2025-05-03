@@ -4,6 +4,9 @@ import Home from "../Pages/Home";
 import Booking from "../Pages/Booking";
 import Accommodations from "../Pages/accommodations";
 import NewsPage from "../Pages/NewsPage";
+import Register from "../Pages/Register";
+import Login from "../Pages/Login";
+import Contact from "../Pages/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +37,18 @@ export const router = createBrowserRouter([
         loader: () => fetch("../newsArticles.json"),
         hydrateFallbackElement: <p>Loading...</p>,
       },
+      {
+        path: "/register",
+        Component: Register
+      },
+      {
+        path: "/login",
+        Component: Login
+      },
+      {
+        path: "/contact",
+        Component: Contact,
+      }
     ],
   },
 ]);

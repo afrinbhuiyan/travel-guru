@@ -21,9 +21,9 @@ const Header = () => {
         <NavLink to={"/news"}>News</NavLink>
         <NavLink to={"/destination"}>Destination</NavLink>
         <a href="#">Blog</a>
-        <a href="#">Contact</a>
+        <NavLink to={"/contact"}>Contact</NavLink>
       </nav>
-      <Link className="bg-[#F9A51A] hover:bg-[#f9911a] text-black font-semibold py-2 px-8 rounded">Login</Link>
+      <Link to={"/login"} className="bg-[#F9A51A] hover:bg-[#f9911a] text-black font-semibold py-2 px-8 rounded">Login</Link>
     </header>
   );
 };
