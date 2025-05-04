@@ -1,9 +1,19 @@
-import React from "react";
+import React, { use } from "react";
 import { IoSearchSharp } from "react-icons/io5";
 import { Link, NavLink } from "react-router";
 import logo from "../assets/logo.png";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Header = () => {
+  const { user, logOut } = use(AuthContext);
+
+  const handleLogOut = () => {
+    logOut().then(() => {
+      alert("logOut")
+    }).catch((error) => {
+      console.log(error)
+    });
+  }
   return (
     <header className="flex justify-between items-center p-6 px-16">
       <div>
@@ -20,10 +30,21 @@ const Header = () => {
         <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/news"}>News</NavLink>
         <NavLink to={"/destination"}>Destination</NavLink>
-        <a href="#">Blog</a>
+        <NavLink to={"/blog"}>Blog</NavLink>
         <NavLink to={"/contact"}>Contact</NavLink>
       </nav>
-      <Link to={"/login"} className="bg-[#F9A51A] hover:bg-[#f9911a] text-black font-semibold py-2 px-8 rounded">Login</Link>
+      {user ? (
+        <button onClick={handleLogOut} className="bg-[#F9A51A] hover:bg-[#f9911a] text-black font-semibold py-2 px-8 rounded">
+          Logout
+        </button>
+      ) : (
+        <Link
+          to={"/login"}
+          className="bg-[#F9A51A] hover:bg-[#f9911a] text-black font-semibold py-2 px-8 rounded"
+        >
+          Login
+        </Link>
+      )}
     </header>
   );
 };

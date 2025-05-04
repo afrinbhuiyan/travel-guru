@@ -1,0 +1,142 @@
+[
+    {
+      "id": 1,
+      "title": "Hidden Gems: Off-the-Beaten-Path in Bangladesh",
+      "excerpt": "Discover secret waterfalls, untouched islands, and local experiences most travelers miss in this beautiful country.",
+      "date": "2023-06-15",
+      "readTime": "6 min",
+      "category": "adventure",
+      "image": "https://images.unsplash.com/photo-1588666309990-d68f08e3d4a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "The Ultimate Guide to Bangladeshi Street Food",
+      "excerpt": "From fuchka to jhalmuri, explore the vibrant street food culture with our local-approved recommendations.",
+      "date": "2023-06-10",
+      "readTime": "8 min",
+      "category": "food",
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Traditional Textiles: The Art of Nakshi Kantha",
+      "excerpt": "Learn about the centuries-old embroidery tradition that tells stories through thread and fabric.",
+      "date": "2023-06-05",
+      "readTime": "5 min",
+      "category": "culture",
+      "image": "https://images.unsplash.com/photo-1612774412771-005ed8e861d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Sustainable Travel in the Sundarbans",
+      "excerpt": "How to explore the world's largest mangrove forest while protecting its delicate ecosystem.",
+      "date": "2023-05-28",
+      "readTime": "7 min",
+      "category": "eco",
+      "image": "https://images.unsplash.com/photo-1588666309990-d68f08e3d4a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Monsoon Magic: Traveling During Rainy Season",
+      "excerpt": "Why the green season might be the best time to experience Bangladesh's natural beauty.",
+      "date": "2023-05-20",
+      "readTime": "4 min",
+      "category": "seasons",
+      "image": "https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Architecture Through the Ages: From Paharpur to Modern Dhaka",
+      "excerpt": "A visual journey through Bangladesh's rich architectural heritage spanning 2000 years.",
+      "date": "2023-05-15",
+      "readTime": "9 min",
+      "category": "history",
+      "image": "https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "featured": true
+    },
+    {
+      "id": 7,
+      "title": "The Six Seasons of Bangladesh: A Cyclical Tapestry",
+      "excerpt": "Explore how Bangladesh uniquely experiences six distinct seasons and their cultural significance.",
+      "date": "2023-04-10",
+      "readTime": "8 min",
+      "category": "seasons",
+      "image": "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "featured": true,
+      "content": {
+        "sections": [
+          {
+            "title": "Grishmo (Summer: April-May)",
+            "description": "Mango orchards bloom while temperatures soar above 40°C. Traditional shorbat drinks like beler juice and tok doi (sour yogurt) provide relief."
+          },
+          {
+            "title": "Barsha (Monsoon: June-August)",
+            "description": "The land transforms into waterways, celebrated through Tagore's poetry and boat races like Nouka Baich during this 1000mm rainfall season."
+          },
+          {
+            "title": "Sharot (Autumn: September-October)",
+            "description": "The season of white Kash flowers and Durga Puja celebrations when rivers teem with hilsa fish."
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "title": "Ancient Maritime History: Bengal's Lost Port Cities",
+      "excerpt": "Uncovering the 2000-year-old trading hubs that connected Bengal to Rome and Southeast Asia.",
+      "date": "2023-03-22",
+      "readTime": "10 min",
+      "category": "history",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Pope1880BengalPres2.jpg/960px-Pope1880BengalPres2.jpg",
+      "featured": false,
+      "content": {
+        "timeline": [
+          { "year": "300 BCE", "event": "Wari-Bateshwar as Mauryan trading post" },
+          { "year": "100 CE", "event": "Chandraketugarh's peak with Roman coin finds" },
+          { "year": "800 CE", "event": "Samanagar port serving Pala Empire's Buddhist network" }
+        ],
+        "artifacts": ["Terracotta plaques", "Roman amphorae", "Chinese ceramics"]
+      }
+    },
+    {
+      "id": 9,
+      "title": "Baul Mystics: The Wandering Minstrels of Bengal",
+      "excerpt": "The spiritual folk tradition recognized by UNESCO as Intangible Cultural Heritage.",
+      "date": "2023-02-15",
+      "readTime": "7 min",
+      "category": "culture",
+      "image": "https://www.ere.net/_next/image?url=https%3A%2F%2Fapi.eremedia.com%2Fwp-content%2Fuploads%2F2016%2F09%2FCulture-circle.jpg&w=3840&q=75",
+      "featured": true,
+      "content": {
+        "traditions": [
+          "Ektara (one-string instrument) craftsmanship",
+          "Dehotattwa (body-centric philosophy)",
+          "Annual Joydev Kenduli Mela gathering"
+        ],
+        "quote": "Manush manusher jonno - humans are for humanity (Baul proverb)"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Winter Festivals: From Poush Parbon to Christmas",
+      "excerpt": "How Bangladesh celebrates diversity through winter festivities.",
+      "date": "2023-01-05",
+      "readTime": "6 min",
+      "category": "seasons",
+      "image": "https://images.unsplash.com/photo-1518604666860-9ed391f76460?ixlib=rb-4.0.3&ixid=M3wx3MjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      "featured": false,
+      "content": {
+        "festivals": [
+          { "name": "Nobanno", "description": "Harvest festival with pitha rice cakes" },
+          { "name": "Christmas", "description": "Old Dhaka's century-old bakeries making fruitcake" },
+          { "name": "Poush Mela", "description": "Santiniketan-inspired winter fair" }
+        ]
+      }
+    }
+  ]
+  

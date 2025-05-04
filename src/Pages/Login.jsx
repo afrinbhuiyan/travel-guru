@@ -1,66 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, use } from "react";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 import Navbar from "../components/Navbar";
+import { AuthContext } from "../Provider/AuthProvider.jsx";
 
 console.log(motion);
 
 const Login = () => {
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-    rememberMe: false,
-  });
+  const { signInUser } = use(AuthContext);
 
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    });
-
-    if (errors[name]) {
-      setErrors({
-        ...errors,
-        [name]: null,
-      });
-    }
-  };
-
-  const validateForm = () => {
-    const newErrors = {};
-
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email";
-    }
-
-    if (!formData.password) {
-      newErrors.password = "Password is required";
-    } else if (formData.password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters";
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      setIsSubmitting(true);
-      // Simulate API call
-      setTimeout(() => {
-        console.log("Login data:", formData);
-        setIsSubmitting(false);
-        alert("Login successful!");
-      }, 1500);
-    }
+
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    signInUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
   };
 
   return (
@@ -102,8 +68,8 @@ const Login = () => {
                     name="email"
                     type="email"
                     autoComplete="email"
-                    value={formData.email}
-                    onChange={handleChange}
+                    // value={formData.email}
+                    // onChange={handleChange}
                     className={`block w-full px-3 py-2 border ${
                       errors.email ? "border-red-300" : "border-gray-300"
                     } placeholder-gray-400 focus:outline-none focus:ring-[#F9A51A] focus:border-[#F9A51A] sm:text-sm`}
@@ -127,8 +93,8 @@ const Login = () => {
                     name="password"
                     type="password"
                     autoComplete="current-password"
-                    value={formData.password}
-                    onChange={handleChange}
+                    // value={formData.password}
+                    // onChange={handleChange}
                     className={`block w-full px-3 py-2 border ${
                       errors.password ? "border-red-300" : "border-gray-300"
                     } placeholder-gray-400 focus:outline-none focus:ring-[#F9A51A] focus:border-[#F9A51A] sm:text-sm`}
@@ -147,8 +113,8 @@ const Login = () => {
                     id="remember-me"
                     name="rememberMe"
                     type="checkbox"
-                    checked={formData.rememberMe}
-                    onChange={handleChange}
+                    // checked={formData.rememberMe}
+                    // onChange={handleChange}
                     className="h-4 w-4 text-[#F9A51A] focus:ring-[#F9A51A] border-gray-300 rounded"
                   />
                   <label

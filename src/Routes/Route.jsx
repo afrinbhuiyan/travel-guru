@@ -7,6 +7,7 @@ import NewsPage from "../Pages/NewsPage";
 import Register from "../Pages/Register";
 import Login from "../Pages/Login";
 import Contact from "../Pages/Contact";
+import Blog from "../Pages/Blog";
 
 export const router = createBrowserRouter([
   {
@@ -48,6 +49,12 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         Component: Contact,
+      },
+      {
+        path: "/blog",
+        Component: Blog,
+        loader: () => fetch("../blogPosts.json"),
+        hydrateFallbackElement: <p>Loading...</p>,
       }
     ],
   },

@@ -1,64 +1,67 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 import Navbar from "../components/Navbar";
+import { AuthContext } from "../Provider/AuthProvider";
 
 console.log(motion);
 
 const Register = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
+  const { createUser, updateUser, setUser } = use(AuthContext);
+
+  // const [formData, setFormData] = useState({
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   password: "",
+  //   confirmPassword: "",
+  // });
 
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-    // Clear error when user types
-    if (errors[name]) {
-      setErrors({
-        ...errors,
-        [name]: null,
-      });
-    }
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  //   // Clear error when user types
+  //   if (errors[name]) {
+  //     setErrors({
+  //       ...errors,
+  //       [name]: null,
+  //     });
+  //   }
+  // };
 
   const validateForm = () => {
     const newErrors = {};
 
-    if (!formData.firstName.trim()) {
-      newErrors.firstName = "First name is required";
-    }
+    // if (!formData.firstName.trim()) {
+    //   newErrors.firstName = "First name is required";
+    // }
 
-    if (!formData.lastName.trim()) {
-      newErrors.lastName = "Last name is required";
-    }
+    // if (!formData.lastName.trim()) {
+    //   newErrors.lastName = "Last name is required";
+    // }
 
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email";
-    }
+    // if (!formData.email.trim()) {
+    //   newErrors.email = "Email is required";
+    // } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+    //   newErrors.email = "Please enter a valid email";
+    // }
 
-    if (!formData.password) {
-      newErrors.password = "Password is required";
-    } else if (formData.password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters";
-    }
+    // if (!formData.password) {
+    //   newErrors.password = "Password is required";
+    // } else if (formData.password.length < 6) {
+    //   newErrors.password = "Password must be at least 6 characters";
+    // }
 
-    if (formData.password !== formData.confirmPassword) {
-      newErrors.confirmPassword = "Passwords do not match";
-    }
+    // if (formData.password !== formData.confirmPassword) {
+    //   newErrors.confirmPassword = "Passwords do not match";
+    // }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -66,15 +69,38 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      setIsSubmitting(true);
-      // Simulate API call
-      setTimeout(() => {
-        console.log("Registration data:", formData);
-        setIsSubmitting(false);
-        alert("Registration successful!");
-      }, 1500);
-    }
+    const firstName = e.target.firstName.value;
+    const lastName = e.target.lastName.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log({ firstName, lastName, email, password });
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        updateUser({ firstName: firstName, lastName: lastName })
+          .then(() => {
+            setUser({...user, firstName: firstName, lastName: lastName});
+            console.log("fgjjhghgkfjg");
+          })
+          .catch((error) => {
+            console.log(error);
+            setUser(user);
+          });
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
+    // if (validateForm()) {
+    //   setIsSubmitting(true);
+    //   // Simulate API call
+    //   setTimeout(() => {
+    //     console.log("Registration data:", formData);
+    //     setIsSubmitting(false);
+    //     alert("Registration successful!");
+    //   }, 1500);
+    // }
   };
 
   return (
@@ -114,8 +140,8 @@ const Register = () => {
                       id="firstName"
                       name="firstName"
                       type="text"
-                      value={formData.firstName}
-                      onChange={handleChange}
+                      // value={formData.firstName}
+                      // onChange={handleChange}
                       className={`appearance-none block w-full px-3 py-2 border ${
                         errors.firstName ? "border-red-300" : "border-gray-300"
                       }
@@ -141,8 +167,8 @@ const Register = () => {
                       id="lastName"
                       name="lastName"
                       type="text"
-                      value={formData.lastName}
-                      onChange={handleChange}
+                      // value={formData.lastName}
+                      // onChange={handleChange}
                       className={`appearance-none block w-full px-3 py-2 border ${
                         errors.lastName ? "border-red-300" : "border-gray-300"
                       }
@@ -170,8 +196,8 @@ const Register = () => {
                     name="email"
                     type="email"
                     autoComplete="email"
-                    value={formData.email}
-                    onChange={handleChange}
+                    // value={formData.email}
+                    // onChange={handleChange}
                     className={`appearance-none block w-full px-3 py-2 border ${
                       errors.email ? "border-red-300" : "border-gray-300"
                     }
@@ -195,8 +221,8 @@ const Register = () => {
                     id="password"
                     name="password"
                     type="password"
-                    value={formData.password}
-                    onChange={handleChange}
+                    // value={formData.password}
+                    // onChange={handleChange}
                     className={`appearance-none block w-full px-3 py-2 border ${
                       errors.password ? "border-red-300" : "border-gray-300"
                     }
@@ -222,8 +248,8 @@ const Register = () => {
                     id="confirmPassword"
                     name="confirmPassword"
                     type="password"
-                    value={formData.confirmPassword}
-                    onChange={handleChange}
+                    // value={formData.confirmPassword}
+                    // onChange={handleChange}
                     className={`appearance-none block w-full px-3 py-2 border ${
                       errors.confirmPassword
                         ? "border-red-300"
